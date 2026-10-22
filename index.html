@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GBDA 414 — Week 6: Pose Simon Says</title>
+
+    <!-- p5.js provides the canvas, webcam, drawing, timing, and interaction functions. -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.4/p5.min.js"></script>
+
+    <!-- ml5.js provides BodyPose / MoveNet pose estimation. -->
+    <script src="https://unpkg.com/ml5@1.0.1/dist/ml5.min.js"></script>
+    <style>
+      body { margin: 0; padding: 24px 16px; background: #151a22; color: #f7f8fa; font-family: system-ui, sans-serif; text-align: center; }
+      h1 { font-size: 28px; margin: 0 0 10px; }
+      p { max-width: 640px; margin: 10px auto 18px; line-height: 1.5; }
+      canvas { display: block; margin: auto; max-width: 100%; height: auto !important; border-radius: 14px; }
+      .note { font-size: 14px; color: #c3ccd9; }
+    </style>
+  </head>
+  <body>
+    <h1>Pose Simon Says</h1>
+    <p>Only follow prompts that begin with <strong>Simon says</strong>. Otherwise, keep your hands down. Lower your hands between rounds.</p>
+    <p class="note">Allow your camera and wait for the model to load. Keep both shoulders and wrists visible. Left and right refer to your own body.</p>
+    <!--
+      Load exactly one sketch at a time.
+      Change the filename below to move through the workshop.
+
+      Available sketches:
+      <script src="step1-webcam.js"></script>
+      <script src="step2-pose.js"></script>
+      <script src="step3-prompt.js"></script>
+      <script src="step4-check.js"></script>
+      <script src="full-sketch.js"></script>
+      <script src="sketch.js"></script>
+    -->
+    <script src="sketch.js"></script>
+  </body>
+</html>
